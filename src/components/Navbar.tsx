@@ -11,8 +11,8 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
-    <header className="container sticky z-50 ">
-      <nav className="flex items-center justify-between py-3 relative ">
+    <header className=" fixed bg-white shadow-sm top-0 left-0 z-50 w-full">
+      <nav className="flex items-center container justify-between py-3 relative ">
         <div className="lg:hidden block ml-5">
           <FaBars
             className="text-3xl cursor-pointer"

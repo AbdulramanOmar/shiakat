@@ -2,18 +2,22 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="container mt-20 bg-primary rounded-lg relative overflow-hidden">
+    <section className="container mt-10 lg:mt-24 bg-primary rounded-lg relative overflow-hidden">
       <div className="lg:bg-banner py-10 lg:py-14 lg:px-7 bg-cover bg-center rounded-3xl">
         <div className="lg:w-1/2">
-
-        <h1 className="lg:text-6xl text-3xl  lg:leading-[70px] font-black my-5">مع شياكتك، تألق بأسلوبك الخاص!</h1>
-        <p className="text-lg text-gray my-4">
-          أزياء تعكس شخصيتك! استمتع بتجربة تسوّق فريدة في شياكتك، حيث نقدم لك
-          تشكيلة واسعة من الملابس التي تجمع بين الأناقة والراحة
-        </p>
-        <button className="bg-black block lg:w-fit w-full transition-all duration-300 hover:scale-110 text-white font-bold  px-5 py-3 mt-5 rounded-lg">
-          <Link className="block w-full" to={"/shop"}> التسوق الان </Link>
-        </button>
+          <h1 className="lg:text-6xl text-3xl  lg:leading-[70px] font-black my-5">
+            مع شياكتك، تألق بأسلوبك الخاص!
+          </h1>
+          <p className="text-lg text-gray my-4">
+            أزياء تعكس شخصيتك! استمتع بتجربة تسوّق فريدة في شياكتك، حيث نقدم لك
+            تشكيلة واسعة من الملابس التي تجمع بين الأناقة والراحة
+          </p>
+          <button className="bg-black block lg:w-fit w-full transition-all duration-300 hover:scale-110 text-white font-bold  px-5 py-3 mt-5 rounded-lg">
+            <Link className="block w-full" to={"/shop"}>
+              {" "}
+              التسوق الان{" "}
+            </Link>
+          </button>
         </div>
       </div>
       <div className="block lg:hidden">
